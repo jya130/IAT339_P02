@@ -1,0 +1,27 @@
+.checkout_body{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.checkout-cart{
+  flex: 25%;
+}
+
+.payment-div{
+  flex: 25%;
+}
+
+.confirm_payment{
+  max-height: 50px;
+}
+
+.imagelink {
+  width: 100%;
+  height: auto;
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+
+.code{
+  margin: 2em;
+}
