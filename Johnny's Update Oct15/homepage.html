@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Muli%7CRaleway%7CRoboto&display=swap" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/home.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"  rel="stylesheet" >
+    <title>Container Brewing</title>
+  </head>
+  <body>
+    <div class="nav_container">
+      <nav class="header_container" id="myTopnav">
+        <img src="img/logo.png" alt="Logo">
+        <a href="styleguide-container-brewing.html" target="_blank" class="button">About</a>
+        <a href="checkout-container-brewing.html" target="_blank" class="button">Cart</a>
+        <a href="#" class="button">Events</a>
+        <a href="product-container-brewing.html" class="button" target="_blank">Our Beers</a>
+        <a href="homepage.html#" class="button active">Home</a>
+        <!-- <a href="#" class="icon"><i class="fa fa-bars"></i></a> -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </nav>
+    </div>
+
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "header_container") {
+        x.className += " responsive";
+      } else {
+        x.className = "header_container";
+      }
+    }
+  </script>
+
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <a href="#"></a>
+      <img src="img/CraftBeer.jpg" style="width:100%">
+      <div class="text">New Beer</div>
+    </div>
+
+    <div class="mySlides fade">
+      <img src="img/craftbeer2.jpg" style="width:100%">
+      <div class="text">Draught</div>
+    </div>
+
+    <div class="mySlides fade">
+      <img src="img/craft.png" style="width:100%">
+      <div class="text">Events</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+  </script>
+
+  <div class="footer">
+    <div>
+      <img src="img/container-white.png" alt="logo">
+    </div>
+    <div>Container Beer Brewery</div>
+    <div>1216 Franklin St</div>
+    <div>Vancouver, BC V6A 1K1</div>
+    <div>CANADA</div>
+  </div>
+
+  </body>
+</html>

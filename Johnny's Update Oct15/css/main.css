@@ -1,0 +1,585 @@
+body {
+  font-family: sans-serif;
+  background-color: #151515;
+  color:white;
+}
+
+.body_container{
+  padding: 4rem;
+  padding-top: 8rem;
+}
+
+@media (max-width:420px) {
+  .body_container{
+    padding: 2rem;
+    font-size: 12px;
+  }
+}
+
+
+*{
+  font-family: 'Muli',sans-serif;
+  outline-color: #AD974F;
+  box-sizing: border-box;
+}
+
+.element {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+p {
+  max-width: 900px;
+}
+
+h1{
+    font-family: 'Raleway', sans-serif;
+}
+
+h2 {
+  margin-top: 6rem;
+}
+
+h3 {
+  margin-top: 1rem;
+}
+
+h4 {
+  margin-bottom: 0.25rem;
+}
+
+p {
+  margin-top: 0;
+}
+
+code {
+  background-color: #36383F;
+}
+
+.header_container{
+  padding-top: 2em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: #151515;
+  border-bottom: 1px solid #36383F;
+}
+
+.header_container a{
+  display: inline-block;
+  float: right;
+}
+
+.header_container a.active{
+   background-color: #8E793E;
+}
+
+.header_container img{
+  max-width: 200px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.header_container .icon{
+  color: white;
+  display: none;
+}
+
+/* https://css-tricks.com/forums/topic/icon-sizes-how-can-i-resize-them/ */
+@media screen and (max-width: 960px) {
+  .header_container a:not(:last-child) {
+    display: none;
+  }
+  .header_container .icon {
+    width: 80px !important;
+    height: 80px !important;
+    display:block;
+  }
+  .header_container img{
+    max-width: 100px;
+    width: 100%;
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .header_container.responsive{
+      position: fixed;
+      width: 100%;
+      top: 0;
+      right: 0;
+      overflow-y: hidden;
+      display: block;
+      transition: 0.5s;
+  }
+  .header_container.responsive a{
+    text-decoration: none;
+    display: block;
+    float: none;
+    transition: 0.3s;
+  }
+  .header_container.responsive .icon{
+    float:right;
+    margin-right: 20px;
+  }
+  .header_container.responsive img{
+    display: none;
+  }
+}
+
+.footer{
+  border-top: 1px solid #36383F;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 3rem;
+  margin-top: 10rem;
+  text-align: center;
+  color: gray;
+}
+
+.footer img{
+  max-width: 50px;
+  max-height: 100px;
+  width: 100%;
+  height: 100%;
+}
+
+.footer div{
+  margin-bottom: 10px;
+}
+/*
+  INTERACTIVE ELEMENTS -------------------
+*/
+.button{
+  color: white;
+  padding:15px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+.button:hover {
+  background-color: #8E793E;
+}
+
+.button2{
+  color: white;
+  padding: 12px 18px;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 2px;
+  background: #AD974F;
+}
+.button2:hover{
+  background-color: #8E793E;
+}
+
+.button3{
+  color: white;
+  padding: 12px 18px;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 2px;
+  border-style: solid;
+  border-color: #36383F;
+}
+.button3:hover{
+  background-color: #36383F;
+}
+
+.textlink a{
+  color: #FBFCD4;
+  text-decoration:none;
+}
+.textlink a:hover{
+  color:#AD974F;
+  font-weight: bold;
+}
+.textlink a:focus{
+  color: white;
+}
+
+label{
+  margin: 10px;
+}
+label:hover{
+  border-bottom: 1px solid #FBFCD4;
+}
+input[type=text] {
+  max-width: 180px;
+  width: 100%;
+  color: white;
+  font-size: 16px;
+  border-style: solid;
+  border-color: #36383F;
+  border-radius: 4px;
+  background-color: transparent;
+  padding: 12px 20px 12px 20px;
+}
+
+input[type=text]:hover{
+  border: 3px solid #36383F;
+}
+
+input[type=text]:focus {
+  color: white;
+}
+
+@media (max-width:330px) {
+  input[type=text]{
+    height: 30px;
+    font-size: 10px;
+  }
+}
+/* https://codepen.io/gomezisdan/pen/bEWdma */
+.imagelink_container{
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.imagelink {
+  width: 100%;
+  height: auto;
+  -webkit-filter: grayscale(80);
+  filter: grayscale(80);
+}
+
+.imagelink:hover{
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+
+/*
+  TEXT ELEMENTS -------------------
+*/
+.Header_elements h2{
+  color: #AD974F;
+  font-family: "Raleway",sans-serif;
+}
+
+.Paragraph_element{
+  max-width: 580px;
+  width: 100%
+}
+
+.list_elements{
+  background-color:#36383F;
+  max-width: 320px;
+  width: 100%;
+  border-radius: 5px;
+  align-items:center;
+
+}
+
+.list_elements li{
+  text-align: center;
+  padding: 1em;
+}
+/*
+  COMBINED ELEMENTS -------------------
+*/
+.navigation_elements{
+  display: inline;
+  background-color: #151515;
+}
+
+.navigation_elements .button{
+  margin: 2em;
+}
+
+.navigation_elements .icon{
+  color: white;
+  float: right;
+  display: none;
+}
+
+@media screen and (max-width: 920px) {
+  .navigation_elements a:not(:last-child) {
+    display: none;
+  }
+  .navigation_elements .icon {
+    width: 80px !important;
+    height: 80px !important;
+    display:block;
+  }
+}
+
+.product_box{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product_block{
+  width: 260px;
+  background: transparent;
+  margin-bottom: 50px;
+  margin: 30px;
+}
+
+.product_block:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.product_block span{
+  width: 100%;
+  padding: 10px;
+  color:white;
+  display: inline-block;
+  text-align: center;
+}
+
+.product_block .Product_name{
+  color: #8E793E;
+  font-weight: bold;
+}
+
+.product_block .Product_type{
+  font-weight: lighter;
+  font-size: 15px;
+}
+
+.product_block .Product_price{
+  font-weight: lighter;
+  font-size: 14px;
+}
+
+@media (max-width:420px) {
+  .product_box{
+    font-size: 10px;
+  }
+  .product_block .Product_type{
+    font-weight: lighter;
+    font-size: 12px;
+  }
+  .product_block .Product_price{
+    font-weight: lighter;
+    font-size: 11px;
+  }
+}
+
+.payment-div{
+  background-color: #36383F;
+  color: white;
+  max-width: 860px;
+  width: 100%;
+  border-radius: 5px;
+  padding:2em;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.payment-div .card_info{
+  flex: 50%;
+}
+
+.payment-div .billing{
+  flex: 50%;
+}
+
+.payment-div .confirm_payment{
+  flex: 100%;
+}
+
+.payment-div h3{
+  color: #8E793E;
+  margin-bottom: 20px;
+  margin-top: 2em;
+  letter-spacing: 2px;
+}
+
+.card label{
+  display: block;
+}
+
+.card label:hover{
+  transform: none;
+  border-style: none;
+}
+
+.card input[type=text] {
+  max-width: 300px;
+  width: 100%;
+  font-size: 14px;
+  border-color: #FBFCD4;
+  outline:none;
+  border-radius: 5px;
+  color:white;
+}
+
+.payment-div .button2{
+  margin-top: 4em;
+  margin-bottom: 1em;
+  width: 200px;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+@media (max-width:900px) {
+  .payment-div{
+    max-width: 780px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .payment-div .card_info{
+    flex: 100%;
+  }
+  .payment-div .billing{
+    flex: 100%;
+  }
+}
+
+.checkout-cart{
+  background-color: #36383F;
+  color: white;
+  max-width: 980px;
+  display: inline-block;
+  width: 100%;
+  border-radius: 5px;
+  padding:20px;
+  height: auto;
+}
+
+.checkout-cart h4{
+  font-size: 2em;
+  border-bottom: 1px solid;
+  border-color: #FBFCD4;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.item_card {
+  flex: 100%;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.item_card img{
+  max-width: 180px;
+  max-height: 180px;
+}
+
+.item_img{
+  -webkit-flex:1 1 150px;
+  -ms-flex:1 1 150px;
+  flex: 1 1 150px;
+}
+
+.item_info{
+  -webkit-flex:4 1 400px;
+  -ms-flex:4 1 400px;
+  flex: 4 1 400px;
+}
+
+.item_info span{
+  padding: 18px;
+  display:block;
+}
+
+.status{
+  font-style: italic;
+  color:  #AD974F;
+}
+
+.item_total{
+  -webkit-flex:1 1 auto;
+  -ms-flex:1 1 auto;
+  flex: 1 1 auto;
+  padding: 18px;
+}
+
+.delete{
+  font-size: 12px;
+  color: gray;
+}
+
+.cart_total{
+  border-top: 1px solid;
+  border-color: #FBFCD4;
+  padding-top: 20px;
+}
+
+.total_details{
+    float: right;
+    clear: both;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.cart_total .label {
+    float: left;
+    clear: both;
+    width: 79%;
+    text-align: right;
+}
+
+.cart_total .totals_value {
+    float: right;
+    width: 21%;
+    text-align: right;
+}
+
+.checkout_btn{
+  padding-top: 20px;
+  text-align: right;
+}
+
+@media (max-width:920px) {
+  .checkout-cart{
+    max-width: 630px;
+    width: 100%;
+  }
+
+  .checkout-cart .item_card{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .item_img{
+    flex: 100%;
+  }
+  .item_info{
+    flex:100%;
+  }
+  .item_info span{
+    padding: 2px;
+    display:block;
+  }
+}
+/*
+  Branding Elements -------------------
+*/
+
+.branding_elements h3{
+  color: #AD974F
+}
+.branding-elements{
+  padding: 5rem;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: black;
+}
+
+.color_scheme img{
+  width: 100%;
+  height: auto;
+}
+
+.Header{
+  font-family: 'Raleway', sans-serif;
+  font-size: 2rem;
+}
+
+.Body{
+  font-family: 'Muli', sans-serif;
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Checkout Cart</title>
+    <link href="https://fonts.googleapis.com/css?family=Muli%7CRaleway%7CRoboto&display=swap" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/checkout.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"  rel="stylesheet" >
+  </head>
+  <body>
+    <div class="nav_container">
+      <nav class="header_container" id="myTopnav">
+        <img src="img/logo.png" alt="Logo">
+        <a href="styleguide-container-brewing.html" target="_blank" class="button">About</a>
+        <a href="checkout-container-brewing.html" target="_blank" class="button active">Cart</a>
+        <a href="#" class="button">Events</a>
+        <a href="product-container-brewing.html" target="_blank" class="button">Our Beers</a>
+        <a href="homepage.html" class="button">Home</a>
+        <!-- <a href="#" class="icon"><i class="fa fa-bars"></i></a> -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </nav>
+    </div>
+
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "header_container") {
+        x.className += " responsive";
+      } else {
+        x.className = "header_container";
+      }
+    }
+  </script>
+
+    <div class="body_container">
+      <h1>Secruity Checkout</h1>
+      <div class="checkout_body">
+      <div class="checkout-cart">
+        <h4>My Cart</h4>
+
+        <div class="item_card">
+          <div class="item_img">
+            <a href="#">
+              <img class="imagelink" src="img/product2.jpg" alt="Checkout Product">
+            </a>
+          </div>
+
+          <div class="item_info">
+            <span>Fear Moive Lions - Double IPA</span>
+            <span>3 x $15</span>
+            <span class="status">In Stock</span>
+          </div>
+
+          <div class="item_total">
+            <h3>$45</h3>
+            <a href="#" class="delete">Delete</a>
+            </div>
+          </div>
+
+          <div class="item_card">
+            <div class="item_img">
+              <a href="#">
+                <img class="imagelink" src="img/product2.jpg" alt="Checkout Product">
+              </a>
+            </div>
+
+            <div class="item_info">
+              <span>Fear Moive Lions - Double IPA</span>
+              <span>2 x $15</span>
+              <span class="status">In Stock</span>
+            </div>
+
+            <div class="item_total">
+              <h3>$30</h3>
+              <a href="#" class="delete">Delete</a>
+            </div>
+          </div>
+
+            <div class="cart_total">
+              <div class="total_details">
+                <label>Subtotal</label>
+                <div class="totals_value">71.97</div>
+              </div>
+              <div class="total_details">
+                <label>Tax (5%)</label>
+                <div class="totals_value">3.60</div>
+              </div>
+              <div class="total_details">
+                <label>Shipping</label>
+                <div class="totals_value">15.00</div>
+              </div>
+              <div class="total_details">
+                <label>Grand Total</label>
+                <div class="totals_value">90.57</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="payment-div">
+            <div class="card_info">
+              <div class="card">
+                <h3>Payment</h3>
+                <label for="cname-input">Name on Card</label>
+                <input type="text" id="cname-input" name="cardname" placeholder="John Smith">
+              </div>
+              <div class="card">
+                <label for="cnumber-input">Credit card number</label>
+                <input type="text" id="cnumber-input" name="cardnumber" placeholder="123456789">
+              </div>
+              <div class="card">
+                <label for="cexp-input">Expire Date</label>
+                <input type="text" id="cexp-input" name="expmonth" placeholder="06/19">  </div>
+                <div class="card">
+                  <label for="ccv-input">CVV</label>
+                  <input type="text" id="ccv-input" name="cvv" placeholder="564">  </div>
+                </div>
+
+
+                <div class="billing">
+                  <h3>Billing Address</h3>
+                  <div class="card">
+                    <label for="bname">Name</label>
+                    <input type="text" id="bname" name="billname" placeholder="John Smith">
+                  </div>
+                  <div class="card">
+                    <label for="baddress">Address</label>
+                    <input type="text" id="baddress" name="billaddress" placeholder="604 xxxxx ave. Surrey, B.C.">
+                  </div>
+                  <div class="card">
+                    <label for="bcountry">Country</label>
+                    <input type="text" id="bcountry" name="billcountry" placeholder="Canada">  </div>
+                    <div class="card">
+                      <label for="bpos">Postal Code</label>
+                      <input type="text" id="bpos" name="billpos" placeholder="V6Y 4H1">  </div>
+                    </div>
+
+                    <div class="button2 confirm_payment">
+                      Confirm
+                    </div>
+            </div>
+          </div>
+        </div>
+
+
+
+          <div class="footer">
+            <div>
+              <img src="img/container-white.png" alt="logo">
+            </div>
+            <div>Container Beer Brewery</div>
+            <div>1216 Franklin St</div>
+            <div>Vancouver, BC V6A 1K1</div>
+            <div>CANADA</div>
+          </div>
+  </body>
+</html>

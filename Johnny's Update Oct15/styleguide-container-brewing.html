@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Container Brewing Styleguide</title>
+  <link href="https://fonts.googleapis.com/css?family=Muli%7CRaleway%7CRoboto&display=swap" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"  rel="stylesheet" >
+
+</head>
+
+<body>
+
+<!-- Responsive Navigation resources retrived from https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
+  <nav class="header_container">
+    <img src="img/logo.png" alt="Logo">
+    <a href="checkout-container-brewing.html" class="button" target="_blank">Cart</a>
+    <a href="product-container-brewing.html" class="button" target="_blank">Product</a>
+    <a href="#combined_elements" class="button">Combined Elements</a>
+    <a href="#text_elements" class="button">Text Elements</a>
+    <a href="#interactive_elements" class="button">Interactive Elements</a>
+    <a href="#" class="icon"><i class="fa fa-bars"></i></a>
+  </nav>
+
+
+
+  <div class="body_container">
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+      <h2>Interactive Elements</h2>
+      <section class="element textlink">
+        <h3>In-text link</h3>
+        <h4>CSS:Selector</h4>
+        <h5>.textlink</h5>
+        <h4>Sample code: </h4>
+        <code>&lt;a href="https://www.drinkcontainer.beer/" target="_blank"&gt;Container&lt;/a&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <p>This is a start-up craft beer brewery in Vancouver, named
+          <a href="https://www.drinkcontainer.beer/" target="_blank">Container</a></p>
+        </section>
+
+
+        <!-- Default Button styling section -->
+        <section class="element">
+          <h3>Navigation Link</h3>
+          <h4>CSS Selector:</h4>
+          <h5>.button</h5>
+          <h4>Sample Code: </h4>
+          <code>
+            &lt;a href="#" class="button">Home&lt;/a>
+          </code>
+
+          <h4>Rendered elements: </h4>
+          <a href="#" class="button">Home</a>
+        </section>
+
+
+        <section class="element">
+          <h3>Submit/Reset Buttons</h3>
+          <h4>CSS Selector</h4>
+          <h5>.button2 .button3</h5>
+          <h4>Sample Code: </h4>
+          <code>
+            &lt;a href="#" class="button2">Submit&lt;/a>
+            &lt;a href="#" class="button3">Cancel&lt;/a>
+          </code>
+
+          <h4>Rendered elements: </h4>
+            <a href="#" class="button2">Submit</a>
+            <a href="#" class="button3">Cancel</a>
+        </section>
+
+
+        <section class="element">
+          <h3>Text Input Field with Label</h3>
+          <h4>CSS Selector:</h4>
+          <h5>input[type=text]</h5>
+          <h4>Sample Code: </h4>
+          <code>
+            &lt;label for="txt-input">Search&lt;/label>
+            &lt;input id="txt-input" type="text" placeholder="What's in mind?">
+          </code>
+
+          <h4>Rendered elements: </h4>
+          <label for="txt-input">Search</label>
+          <input id="txt-input" type="text" placeholder="What's in mind?">
+        </section>
+
+
+        <section class="element">
+          <h3>Radio Button with Label</h3>
+          <h4>Sample Code: </h4>
+          <code>
+            &lt;label for="credit-btn">
+              &lt;input id="credit-btn" type="radio" name="payment" value="credit">
+              Credit
+            &lt;/label>
+            &lt;label for="debit-btn">
+              &lt;input id="debit-btn" type="radio" name="payment" value="debit">
+              Debit
+            &lt;/label>
+            &lt;label for="paypal-btn">
+              &lt;input id="paypal-btn" type="radio" name="payment" value="paypal">
+              Paypal
+            &lt;/label>
+          </code>
+
+          <h4>Rendered elements</h4>
+            <label for="credit-btn">
+              <input id="credit-btn" type="radio" name="payment" value="credit">
+              Credit
+            </label>
+            <label for="debit-btn">
+              <input id="debit-btn" type="radio" name="payment" value="debit">
+              Debit
+            </label>
+            <label for="paypal-btn">
+              <input id="paypal-btn" type="radio" name="payment" value="paypal">
+              Paypal
+            </label>
+        </section>
+
+
+        <section class="element">
+          <h3>Image as a Link</h3>
+          <h4>CSS Selector</h4>
+          <h5>.imagelink_container .imagelink</h5>
+          <h4>Sample Code: </h4>
+          <code>
+            &lt;div class="imagelink_container">
+              &lt;a href="https://www.drinkcontainer.beer/" target="_blank">
+                &lt;img class="imagelink" src="img/product2.jpg" alt="Logo of Conatiner Brewing">
+              &lt;/a>
+            &lt;/div>
+          </code>
+
+          <h4>Rendered element: </h4>
+          <div class="imagelink_container">
+            <a href="https://www.drinkcontainer.beer/" target="_blank">
+              <img class="imagelink" src="img/product2.jpg" alt="Logo of Conatiner Brewing">
+            </a>
+          </div>
+        </section>
+      </section>
+      <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+      <!-- TEXT ELEMENTS SECTION // -->
+      <section id="text_elements">
+        <h2>Text Elements</h2>
+        <section class="element">
+          <h3>Headings</h3>
+          <h4>Sample Code: </h4>
+          <code>
+            &lt;h3&gt;Upcoming Event&lt;h3&gt;<br>
+            &lt;h4&gt;Event Date&lt;/h4&gt;<br>
+            &lt;h5&gt;Event Location&lt;/h5&gt;<br>
+            &lt;h6&gt;Detail&lt;/h6&gt;
+          </code>
+
+          <h4>Rendered elements: </h4>
+          <section class="Header_elements">
+            <h2>Container Brewing</h2>
+            <h3>Event Date</h3>
+            <h3>Event Location</h3>
+            <h4>Detail</h4>
+          </section>
+        </section>
+
+        <section class="element">
+          <h3>Paragraphs</h3>
+          <h4>CSS Selector</h4>
+          <h5>.Paragraph_element</h5>
+          <h4>Sample Code: </h4>
+          <code>
+            &lt;p&gt;We are working hard to open soon and hope that the wait is worth it.<br>
+            You can now find some of our first beers on store shelves which
+            will give you a sneak peak at what to expect in our lounge.&lt;/p&gt;
+          </code>
+
+          <h4>Rendered elements: </h4>
+          <p class="Paragraph_element">We are working hard to open soon and hope that the wait is worth it.
+            You can now find some of our first beers on store shelves which
+            will give you a sneak peak at what to expect in our lounge. </p>
+          </section>
+
+          <section class="element">
+            <h3>Numbered Lists</h3>
+            <h4>CSS Selector</h4>
+            <h5>.list_elements</h5>
+            <h4>Sample Code: </h4>
+            <code>
+              &lt;ol&gt;<br>
+              &lt;li&gt;Brunch&lt;/li&gt;<br>
+              &lt;li&gt;Lunch&lt;/li&gt;<br>
+              &lt;li&gt;Happy Hour&lt;/li&gt;<br>
+              &lt;li&gt;Dinner&lt;/li&gt;<br>
+              &lt;/ol&gt;
+            </code>
+
+            <h4>Rendered elements: </h4>
+            <ol class="list_elements">
+              <li>Brunch</li>
+              <li>Lunch</li>
+              <li>Happy Hour</li>
+              <li>Dinner</li>
+            </ol>
+          </section>
+
+        </section>
+        <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+        <!-- COMBINED ELEMENTS SECTION // -->
+        <section id="combined_elements">
+          <h2>Combined Elements</h2>
+          <section class="element">
+            <h3>Main Navigation</h3>
+            <h4>CSS Selector</h4>
+            <h5>.navigation_elements</h5>
+            <h4>Sample Code: </h4>
+            <code>
+              &lt;nav class="navigation_elements">
+                &lt;a href="#interactive_elements" class="button">Home&lt;/a>
+                &lt;a href="#text_elements" class="button">Beers&lt;/a>
+                &lt;a href="#combined_elements" class="button">Cart&lt;/a>
+                &lt;a href="#citations" class="button">About&lt;/a>
+                &lt;a href="#" class="icon">&lt;i class="fa fa-bars">&lt;/i>&lt;/a>
+              &lt;/nav>
+            </code>
+
+            <h4>Rendered elements</h4>
+            <nav class="navigation_elements">
+              <a href="#interactive_elements" class="button">Home</a>
+              <a href="#text_elements" class="button">Beers</a>
+              <a href="#combined_elements" class="button">Cart</a>
+              <a href="#citations" class="button">About</a>
+              <a href="#" class="icon"><i class="fa fa-bars"></i></a>
+            </nav>
+          </section>
+
+          <section class="element">
+            <h3>Product/Service Listing</h3>
+            <div class="textlink">
+              <a href="product-container-brewing.html" target="_blank">Link to product listing page</a>
+            </div>
+            <h4>CSS Selector</h4>
+            <h5>.product_box .product_block</h5>
+            <h4>Sample Code: </h4>
+            <code>
+              &lt;div class="product_block">
+                &lt;a href="https://www.drinkcontainer.beer/beer" target="_blank">
+                  &lt;img class="imagelink" src="img/product2.jpg" alt="Origin-Neipa Image">
+                  &lt;span class="Product_name">Fear Movie Lions&lt;/span>
+                  &lt;span class="Product_type">Double IPA&lt;/span>
+                  &lt;span class="Product_price">$15/4pack&lt;/span>
+                &lt;/a>
+              &lt;/div>
+            </code>
+
+            <h4>Rendered elements: </h4>
+            <div class="product_box">
+              <div class="product_block">
+                <a href="https://www.drinkcontainer.beer/beer" target="_blank">
+                  <img class="imagelink" src="img/product2.jpg" alt="Origin-Neipa Image">
+                  <span class="Product_name">Fear Movie Lions</span>
+                  <span class="Product_type">Double IPA</span>
+                  <span class="Product_price">$15/4pack</span>
+                </a>
+              </div>
+
+              <div class="product_block ">
+                <a href="https://www.drinkcontainer.beer/beer" target="_blank">
+                  <img class="imagelink" src="img/product2.jpg" alt="Origin-Neipa Image">
+                  <span class="Product_name">Fear Movie Lions</span>
+                  <span class="Product_type">Double IPA</span>
+                  <span class="Product_price">$15/4pack</span>
+                </a>
+              </div>
+
+              <div class="product_block ">
+                <a href="https://www.drinkcontainer.beer/beer" target="_blank">
+                  <img class="imagelink" src="img/product2.jpg" alt="Origin-Neipa Image">
+                  <span class="Product_name">Fear Movie Lions</span>
+                  <span class="Product_type">Double IPA</span>
+                  <span class="Product_price">$15/4pack</span>
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <section class="element">
+            <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_checkout_form -->
+            <h3>Payment Form</h3>
+            <h4>CSS Selector</h4>
+            <h5>.payment-div .card_info .billing</h5>
+            <h4>Sample Code: </h4>
+            <code>
+              &lt;div class="payment-div">
+                &lt;div class="card_info">
+                  &lt;div class="card">
+                    &lt;h3>Payment&lt;/h3>
+                    &lt;label for="cname-input">Name on Card&lt;/label>
+                    &lt;input type="text" id="cname-input" name="cardname" placeholder="John Smith">
+                  &lt;/div>
+                  &lt;div class="card">
+                    &lt;label for="cnumber-input">Credit card number&lt;/label>
+                    &lt;input type="text" id="cnumber-input" name="cardnumber" placeholder="123456789">
+                  &lt;/div>
+                  &lt;div class="card">
+                    &lt;label for="cexp-input">Expire Date&lt;/label>
+                    &lt;input type="text" id="cexp-input" name="expmonth" placeholder="06/19">  &lt;/div>
+                    &lt;div class="card">
+                      &lt;label for="ccv-input">CVV&lt;/label>
+                      &lt;input type="text" id="ccv-input" name="cvv" placeholder="564">  &lt;/div>
+                    &lt;/div>
+                    &lt;div class="billing">
+                      &lt;h3>Billing Address&lt;/h3>
+                      &lt;div class="card">
+                        &lt;label for="bname">Name&lt;/label>
+                        &lt;input type="text" id="bname" name="billname" placeholder="John Smith">
+                      &lt;/div>
+                      &lt;div class="card">
+                        &lt;label for="baddress">Address&lt;/label>
+                        &lt;input type="text" id="baddress" name="billaddress" placeholder="604 xxxxx ave. Surrey, B.C.">
+                      &lt;/div>
+                      &lt;div class="card">
+                        &lt;label for="bcountry">Country&lt;/label>
+                        &lt;input type="text" id="bcountry" name="billcountry" placeholder="Canada">  &lt;/div>
+                        &lt;div class="card">
+                          &lt;label for="bpos">Postal Code&lt;/label>
+                          &lt;input type="text" id="bpos" name="billpos" placeholder="V6Y 4H1">  &lt;/div>
+                        &lt;/div>
+                        &lt;div class="button2 confirm_payment">
+                          Confirm
+                        &lt;/div>
+                      &lt;/div>
+            </code>
+
+            <h4>Rendered elements</h4>
+            <div class="payment-div">
+              <div class="card_info">
+                <div class="card">
+                  <h3>Payment</h3>
+                  <label for="cname-input">Name on Card</label>
+                  <input type="text" id="cname-input" name="cardname" placeholder="John Smith">
+                </div>
+                <div class="card">
+                  <label for="cnumber-input">Credit card number</label>
+                  <input type="text" id="cnumber-input" name="cardnumber" placeholder="123456789">
+                </div>
+                <div class="card">
+                  <label for="cexp-input">Expire Date</label>
+                  <input type="text" id="cexp-input" name="expmonth" placeholder="06/19">  </div>
+                  <div class="card">
+                    <label for="ccv-input">CVV</label>
+                    <input type="text" id="ccv-input" name="cvv" placeholder="564">  </div>
+                  </div>
+
+
+                  <div class="billing">
+                    <h3>Billing Address</h3>
+                    <div class="card">
+                      <label for="bname">Name</label>
+                      <input type="text" id="bname" name="billname" placeholder="John Smith">
+                    </div>
+                    <div class="card">
+                      <label for="baddress">Address</label>
+                      <input type="text" id="baddress" name="billaddress" placeholder="604 xxxxx ave. Surrey, B.C.">
+                    </div>
+                    <div class="card">
+                      <label for="bcountry">Country</label>
+                      <input type="text" id="bcountry" name="billcountry" placeholder="Canada">  </div>
+                      <div class="card">
+                        <label for="bpos">Postal Code</label>
+                        <input type="text" id="bpos" name="billpos" placeholder="V6Y 4H1">  </div>
+                      </div>
+
+                      <div class="button2 confirm_payment">
+                        Confirm
+                      </div>
+                    </div>
+                  </section>
+
+                  <section class="element">
+                    <!-- https://codepen.io/justinklemm/pen/zAdoJ?editors=1100 -->
+                    <h3>Checkout Cart</h3>
+                    <div class="textlink">
+                      <a href="checkout-container-brewing.html" target="_blank">Link to checkout page</a>
+                    </div>
+                    <h4>CSS Selector</h4>
+                    <h5>.checkout-cart</h5>
+                    <h4>Sample Code: </h4>
+                    <code>
+                      &lt;div class="item_card">
+                        &lt;div class="item_img">
+                          &lt;a href="#">
+                            &lt;img class="imagelink" src="img/product2.jpg" alt="Checkout Product">
+                          &lt;/a>
+                        &lt;/div>
+
+                        &lt;div class="item_info">
+                          &lt;span>Fear Moive Lions - Double IPA&lt;/span>
+                          &lt;span>3 x $15&lt;/span>
+                          &lt;span class="status">In Stock&lt;/span>
+                        &lt;/div>
+                    </code>
+
+                    <h4>Rendered elements: </h4>
+                    <div class="checkout-cart">
+                      <h4>My Cart</h4>
+                      <!-- https://www.w3schools.com/howto/howto_css_checkout_form.asp -->
+                      <div class="item_card">
+                        <div class="item_img">
+                          <a href="#">
+                            <img class="imagelink" src="img/product2.jpg" alt="Checkout Product">
+                          </a>
+                        </div>
+
+                        <div class="item_info">
+                          <span>Fear Moive Lions - Double IPA</span>
+                          <span>3 x $15</span>
+                          <span class="status">In Stock</span>
+                        </div>
+
+                        <div class="item_total">
+                          <h3>$45</h3>
+                          <a href="#" class="delete">Delete</a>
+                          </div>
+                        </div>
+
+                        <div class="item_card">
+                          <div class="item_img">
+                            <a href="#">
+                              <img class="imagelink" src="img/product2.jpg" alt="Checkout Product">
+                            </a>
+                          </div>
+
+                          <div class="item_info">
+                            <span>Fear Moive Lions - Double IPA</span>
+                            <span>2 x $15</span>
+                            <span class="status">In Stock</span>
+                          </div>
+
+                          <div class="item_total">
+                            <h3>$30</h3>
+                            <a href="#" class="delete">Delete</a>
+                          </div>
+                        </div>
+
+                          <div class="cart_total">
+                            <div class="total_details">
+                              <label>Subtotal</label>
+                              <div class="totals_value">71.97</div>
+                            </div>
+                            <div class="total_details">
+                              <label>Tax (5%)</label>
+                              <div class="totals_value">3.60</div>
+                            </div>
+                            <div class="total_details">
+                              <label>Shipping</label>
+                              <div class="totals_value">15.00</div>
+                            </div>
+                            <div class="total_details">
+                              <label>Grand Total</label>
+                              <div class="totals_value">90.57</div>
+                            </div>
+                          </div>
+
+                          <div class="checkout_btn">
+                            <a href="#" class="button2">Checkout</a>
+                          </div>
+                        </div>
+                    </section>
+                  </section>
+                  <!-- // COMBINED ELEMENTS SECTION -->
+
+                  <div class="branding_elements">
+                    <section id = "branding_ides">
+                      <h2>Branding Ideas</h2>
+                      <section class="element">
+                        <h3>What dose the company do?</h3>
+                        <p>Ever since the revolution of craft beer in Vancouver, numerous breweries pop out to the market
+                          Container Brewing is one of the most recent craft beer breweries found in 2019. Other than making beers,
+                          they also have their own taproom opening soon to hosts guests who are looking forward to trying fresh draft beer on tap.
+                        </p>
+
+                        <h3>Who is the potention customers</h3>
+                        <p>Anyone who loves craft beers, except minors. Most likely in the age between 25 to 50</p>
+
+                        <h3>Why might this company entice someone to purchase a product or service</h3>
+                        <p>Selling beers in various liquor stores, hosting tasting events, having happy hours,
+                          having food in taproom, having good graphic design on both beer cans and websites</p>
+                        </section>
+                      </section>
+
+                      <section id="branding_components">
+                        <h2>Brand Components</h2>
+                        <section class="branding">
+                          <h3>Font Selection</h3>
+                          <h4>Typeface for Header: Raleway</h4>
+                          <p class="Header">Container Brewing</p>
+
+                          <h4>Typeface for Body: Muli</h4>
+                          <p class="Body">We might be on the west coast but this NEIPA comes right from it's origin.
+                            It's the real thing and we're sure that you will agree this is no imposter.</p>
+
+                            <h4>Color Palettes</h4>
+                            <figure class="color_scheme">
+                              <img src="img/36383F.jpg" alt="Main Color">
+                              <figcaption>Primary Color #36383F</figcaption>
+                            </figure>
+                            <figure class="color_scheme">
+                              <img src="img/8E793E.jpg" alt="Secondary Color">
+                              <figcaption>Decorative Color #8E793E</figcaption>
+                            </figure>
+                            <figure class="color_scheme">
+                              <img src="img/AD974F.jpg" alt="Third Color">
+                              <figcaption>Decorative Color #AD974F</figcaption>
+                            </figure>
+                            <figure class="color_scheme">
+                              <img src="img/FBFCD4.png" alt="Third Color">
+                              <figcaption>Decorative Color #FBFCD4</figcaption>
+                            </figure>
+
+                            <h4>Art Direction</h4>
+                            <p>
+                              Black, dark navy, and gold are chosen to be the color scheme of the webpage<br>
+                              Raleway is chosen to be the font for headers, as it brings out a bold and extragerate feeling<br>
+                              Muli is chosen to be the font for body, as the minimalistic of the font eliminates visual distraction.
+                            </p>
+                          </section>
+                        </section>
+                      </div>
+
+
+
+
+                      <section id="citations">
+                        <h2>Citations</h2>
+
+                        <ul class="textlink">
+                          <li>Container Brewing Logo and Inforamation. Retrieved from <a href="https://www.drinkcontainer.beer/">https://www.drinkcontainer.beer/</a></li>
+                          <li>Craftbeer Images. Retrieved from <a href="https://www.stonebrewing.com/">https://www.stonebrewing.com/</a></li>
+                          <li>Font Resources. Retrieved from <a href="https://fonts.google.com/">https://fonts.google.com/</a></li>
+                          <li>Icon Resources. Retrieved from <a href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css</a></li>
+                        </ul>
+
+                      </section>
+
+                  </div>
+                </body>
+              </html>
