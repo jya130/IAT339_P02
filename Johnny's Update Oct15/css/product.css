@@ -1,6 +1,8 @@
 .body_container{
-  margin-left: 42px;
-  margin-right: 42px;
+  /* margin-left: 42px;
+  margin-right: 42px; */
+  margin-left:auto;
+  margin-right:auto;
 }
 
 .code{
@@ -8,4 +10,20 @@
 }
 .header_container{
   margin-bottom: 5rem;
+}
+
+.add_cart{
+  background-color:rgb(46, 46, 46);
+  color: white;
+  padding:10px 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+.add_cart:hover {
+  background-color: #8E793E;
+}
+.product_description{
+  width:40%;
+  float:right;
 }
