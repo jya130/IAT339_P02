@@ -224,11 +224,15 @@ input[type=text] {
 }
 
 input[type=text]:hover{
-  border: 3px solid #36383F;
+  border-color:rgb(183, 215, 247);
+  box-shadow:0 0 8px 0 #AD974F;
+
 }
 
 input[type=text]:focus {
-  color: white;
+  border-color:rgb(183, 215, 247);
+  box-shadow:0 0 12px 0 #AD974F;
+
 }
 
 @media (max-width:330px) {
@@ -364,7 +368,6 @@ input[type=text]:focus {
 }
 
 .payment-div{
-  background-color: #36383F;
   color: white;
   max-width: 860px;
   width: 100%;
@@ -437,7 +440,6 @@ input[type=text]:focus {
 }
 
 .checkout-cart{
-  background-color: #36383F;
   color: white;
   max-width: 980px;
   display: inline-block;
