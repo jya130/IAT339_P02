@@ -98,4 +98,43 @@
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
+  
+}
+
+/* edit main area */
+.intro_p{
+  padding-top:3em;
+  padding-bottom:3em;
+  font-style: italic;
+  font-size:25px;
+}
+@media only screen and (max-width: 700px) {
+  .intro_p{
+    font-size:20px;
+  }
+
+}
+  .main_area{
+  margin-top:3em;  
+
+}
+.main_area img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom:1em;
+  padding-top:5em;
+  max-width: 50%;
+}
+.main_area h1, .main_area p, .main_area h2{
+  text-align: center;
+
+}
+.main_area h2{
+  margin-top:1em;
+  
+}
+
+.main_area p {
+  margin:auto;
 }

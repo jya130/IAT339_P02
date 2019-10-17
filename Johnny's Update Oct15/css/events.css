@@ -78,7 +78,7 @@ font-family: 'Raleway', sans-serif;
     padding-top:1em;
     font-size:20px;
 }
-
+/* 
 button{
     background-color:rgb(46, 46, 46);
     color: white;
@@ -98,4 +98,4 @@ img{
 img:hover{
     -webkit-filter: grayscale(0);
     filter: grayscale(0);
-}
+} */
