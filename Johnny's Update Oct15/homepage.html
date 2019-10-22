@@ -11,100 +11,98 @@
   </head>
   <body>
     <div class="nav_container">
-      <nav class="header_container" id="myTopnav">
-        <img src="img/logo.png" alt="Logo">
-        <a href="styleguide-container-brewing.html"  class="button">About</a>
-        <a href="checkout-container-brewing.html"  class="button">Cart</a>
-        <a href="events.html" class="button">Events</a>
-        <a href="product-container-brewing.html" class="button">Our Beers</a>
-        <a href="homepage.html#" class="button active">Home</a>
-        <!-- <a href="#" class="icon"><i class="fa fa-bars"></i></a> -->
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <div class="hamburgur">
+        <a class="icon" onClick="openNav()">
           <i class="fa fa-bars"></i>
         </a>
+      </div>
+
+      <div class="header_img">
+        <img src="img/container-white.png" alt="Logo">
+      </div>
+      <div class="header_content">
+        <nav id="#header_content">
+          <a href="homepage.html">Home</a>
+          <a href="product-container-brewing.html">Our Beers</a>
+          <a href="events.html">Events</a>
+          <a href="checkout-container-brewing.html">Cart</a>
+          <a href="about.html">About</a>
       </nav>
+      </div>
+
+      <div id="mySidenav" class="sidenav">
+        <a class="closebtn" onclick="closeNav()">X</a>
+        <a href="homepage.html">Home</a>
+        <a href="product-container-brewing.html">Our Beers</a>
+        <a href="events.html">Events</a>
+        <a href="checkout-container-brewing.html">Cart</a>
+        <a href="styleguide-container-brewing.html">About</a>
+      </div>
     </div>
 
-    <script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "header_container") {
-        x.className += " responsive";
-      } else {
-        x.className = "header_container";
-      }
-    }
-  </script>
+    <div class="slideshow-container">
 
-  <div class="slideshow-container">
+      <div class="mySlides fade">
+        <a href="#">
+          <img src="img/CraftBeer.jpg" style="width:100%" alt= "craft beer">
+        </a>
+        <div class="slide_text">
+          <h2>WHATS THE TASTE OF FALL? BEERS!</h2>
+          <div class="slide_text_detail">
+              New Beers Launches Soon
+          </div>
+          <a href="checkout-container-brewing.html" class="button2" >View Details</a>
+        </div>
+      </div>
 
-    <div class="mySlides fade">
-      <a href="#"></a>
-      <img src="img/CraftBeer.jpg" style="width:100%" alt= "craft beer">
-      <div class="text">New Beer</div>
-    </div>
+      <div class="mySlides fade">
+        <a href="https://bc.thegrowler.ca/the-growlies/here-are-the-winners-of-the-2018-growler-craft-beer-awards/">
+          <img src="img/festival.jpg" style="width:100%" alt = "craft beer">
+        </a>
+        <div class="slide_text">
+          <h2>THE GROWLER BEER AWARD 2019</h2>
+          <div class="slide_text_detail">
+              Announced on Oct 12
+          </div>
+          <a href="https://bc.thegrowler.ca/the-growlies/here-are-the-winners-of-the-2018-growler-craft-beer-awards/" class="button2" >View Details</a>
+        </div>
+      </div>
 
-    <div class="mySlides fade">
-      <img src="img/craftbeer2.jpg" style="width:100%" alt = "craft beer">
-      <div class="text">Draught</div>
-    </div>
+      <div class="mySlides fade">
+        <a href="https://www.bcbeerawards.com/">
+          <img src="img/award.jpg" style="width:100%" alt = "craft beer">
+        </a>
+        <div class="slide_text">
+          <h2>THE BCBA AWARDS 2019</h2>
+          <div class="slide_text_detail">
+              Announced on Oct 20
+          </div>
+          <a href="https://www.bcbeerawards.com/" class="button2" >View Details</a>
+        </div>
+      </div>
 
-    <div class="mySlides fade">
-      <img src="img/craft.png" style="width:100%" alt = "craft beer">
-      <div class="text">Events</div>
-    </div>
-
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
   </div>
   <br>
 
-  <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-  </div>
+    <div class="slideshow_dots">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
 
-  <script>
-    var slideIndex = 1;
-    showSlides(slideIndex);
+<div class="body_container">
+    <p class = "intro_p"> “Without question, the greatest invention in the history is beer. Oh, I grant you that the wheel was also a fine invention, but the wheel does not go nearly as well with pizza.”</p>
+    <img src = "img/home_intro_image.jpg" alt = "product image">
+    <h2>WHAT WE DO?</h2>
+    <p>We have been best friends of over 30 years, and Container has been our dream for many years. We have been literally building this thing with our barehands, shedding blood, tears and sweat while sharing laughs on the daily. There's never a dull moment here at Container.The dream is now a reality that is taking shape. We look forward to sharing the results of our hard work with you!</p>
+    <img src = "img/home_intro_image2.jpg" alt = "product image">
+    <h3>WORLD BISTRO AND GARDENS</h3>
+    <p>We proudly specialize in locally grown, small-farm ingredients and feature an eclectic menu of world-inspired cuisine and our unique take on comfort food. As strong advocates for environmental responsibility and high-quality food, we are now the largest restaurant purchaser of local, small-farm organic produce in San Diego County. With 36 craft and specialty beers on tap, an extensive wine list, and distinctive banquet and wedding accommodations, our Bistro has become one of the premier culinary destinations in Vancouer.</p>
+</div>
 
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";
-      dots[slideIndex-1].className += " active";
-    }
-  </script>
-
-  <div class = "main_area">
-    <p class = "intro_p">"Container Brewing has come a long way since opening in 1996. We have grown from a small microbrewery with just two founders into one of the largest craft breweries in the United States, employing more than 1,100 amazing men and women. From the beginning, our goal has been to brew outstanding, unique beers while maintaining an unwavering commitment to sustainability, business ethics, and the art of brewing."</p>
-    <img src = "img/home_intro_image.jpg" alt = "product image"> 
-    <h1>ABOUT CONTAINER BREWING</h1>
-    <p>Container Brewing has come a long way since opening up in San Diego, California in 1996. We have been listed on the Inc. 500 | 5000 Fastest Growing Private Companies list 11 times, and has been called the “All-time Top Brewery on Planet Earth” by BeerAdvocate magazine twice. Stone Brewing is the ninth-largest craft brewer in the U.S. and with our breweries in Richmond, Virginia & Berlin, Germany, we join artisanal brewers across the world in the quest to show the public that there are more…and better…choices beyond the world of industrial beer.</p>
-   
-    <img src = "img/home_intro_image2.jpg" alt = "product image"> 
-    <h2>WORLD BISTRO AND GARDENS</h2>
-    <p>We proudly specialize in locally grown, small-farm ingredients and feature an eclectic menu of world-inspired cuisine and our unique take on comfort food. As strong advocates for environmental responsibility and high-quality food, we are now the largest restaurant purchaser of local, small-farm organic produce in San Diego County. With 36 craft and specialty beers on tap, an extensive wine list, and distinctive banquet and wedding accommodations, our Bistro has become one of the premier culinary destinations in San Diego County.</p>
-  </div>
 
   <div class="footer">
     <div>
@@ -115,6 +113,10 @@
     <div>Vancouver, BC V6A 1K1</div>
     <div>CANADA</div>
   </div>
+
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="javascript/navigation.js"> </script>
+  <script src="javascript/slideshow.js"> </script>
 
   </body>
 </html>

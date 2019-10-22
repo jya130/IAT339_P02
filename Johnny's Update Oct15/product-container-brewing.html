@@ -11,38 +11,94 @@
   </head>
   <body>
     <div class="nav_container">
-      <nav class="header_container" id="myTopnav">
-        <img src="img/logo.png" alt="Logo">
-        <a href="styleguide-container-brewing.html"  class="button">About</a>
-        <a href="checkout-container-brewing.html" class="button">Cart</a>
-        <a href="events.html" class="button">Events</a>
-        <a href="product-container-brewing.html" class="button active">Our Beers</a>
-        <a href="homepage.html" class="button">Home</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+
+      <div class="hamburgur">
+        <a class="icon" onClick="openNav()">
           <i class="fa fa-bars"></i>
         </a>
+      </div>
+      <div class="header_img">
+        <img src="img/container-white.png" alt="Logo">
+      </div>
+      <div class="header_content">
+        <nav id="#header_content">
+          <a href="homepage.html">Home</a>
+          <a href="product-container-brewing.html">Our Beers</a>
+          <a href="events.html">Events</a>
+          <a href="checkout-container-brewing.html">Cart</a>
+          <a href="about.html">About</a>
       </nav>
+      </div>
+
+      <div id="mySidenav" class="sidenav">
+        <a class="closebtn" onclick="closeNav()">X</a>
+        <a href="homepage.html">Home</a>
+        <a href="product-container-brewing.html">Our Beers</a>
+        <a href="events.html">Events</a>
+        <a href="checkout-container-brewing.html">Cart</a>
+        <a href="styleguide-container-brewing.html">About</a>
+      </div>
     </div>
 
-    <script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "header_container") {
-        x.className += " responsive";
-      } else {
-        x.className = "header_container";
-      }
-    }
-  </script>
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <a href="#">
+          <img src="img/beerpromot1.jpg" style="width:100%" alt= "craft beer">
+        </a>
+        <div class="slide_text">
+          <h2>Our Medal Winner</h2>
+          <div class="slide_text_detail">
+              Sticky Passion Double IPA
+          </div>
+          <a href="checkout-container-brewing.html" class="button2" >View Details</a>
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <a href="https://bc.thegrowler.ca/the-growlies/here-are-the-winners-of-the-2018-growler-craft-beer-awards/">
+          <img src="img/beerpromot2.jpg" style="width:100%" alt = "craft beer">
+        </a>
+        <div class="slide_text">
+          <h2>Our Newest Beer</h2>
+          <div class="slide_text_detail">
+              Steep Coast Double IPA
+          </div>
+          <a href="https://bc.thegrowler.ca/the-growlies/here-are-the-winners-of-the-2018-growler-craft-beer-awards/" class="button2" >View Details</a>
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <a href="https://www.bcbeerawards.com/">
+          <img src="img/beerpromot3.jpg" style="width:100%" alt = "craft beer">
+        </a>
+        <div class="slide_text">
+          <h2>Our Featureing Beers</h2>
+
+          <a href="https://www.bcbeerawards.com/" class="button2" >View Details</a>
+        </div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  </div>
+  <br>
+
+    <div class="slideshow_dots">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
 
     <div class="body_container">
-        <h1>Feature Beers</h1>
+      <h2>Feature Beers</h2>
       <div class="product_box">
-        <div class="product_block">
+        <div class="product_block ">
           <a href="https://www.drinkcontainer.beer/beer" target="_blank">
-            <img class="imagelink" src="img/product1.jpg" alt="Origin-Neipa Image">
-            <span class="Product_name">Fear Movie Lions</span>
-            <span class="Product_type">Double IPA</span>
+            <img class="imagelink" src="img/product7.jpg" alt="Origin-Neipa Image">
+            <span class="Product_name">Delicious - IPA</span>
+            <span class="Product_type">6.2% ABV</span>
             <span class="Product_price">$15/4pack</span>
           </a>
         </div>
@@ -50,18 +106,18 @@
         <div class="product_block ">
           <a href="product_detail.html" target="_blank">
             <img class="imagelink" src="img/product2.jpg" alt="Origin-Neipa Image">
-            <span class="Product_name">Fear Movie Lions</span>
-            <span class="Product_type">Double IPA</span>
-            <span class="Product_price">$15/4pack</span>
+            <span class="Product_name">Aggro - DIPA</span>
+            <span class="Product_type">8% ABV</span>
+            <span class="Product_price">$20/4pack</span>
           </a>
         </div>
 
         <div class="product_block ">
           <a href="https://www.drinkcontainer.beer/beer" target="_blank">
             <img class="imagelink" src="img/product3.jpg" alt="Origin-Neipa Image">
-            <span class="Product_name">Fear Movie Lions</span>
-            <span class="Product_type">Double IPA</span>
-            <span class="Product_price">$15/4pack</span>
+            <span class="Product_name">Notorious - DIPA</span>
+            <span class="Product_type">7.2% ABV</span>
+            <span class="Product_price">$20/4pack</span>
           </a>
         </div>
 
@@ -77,15 +133,27 @@
         <div class="product_block ">
           <a href="https://www.drinkcontainer.beer/beer" target="_blank">
             <img class="imagelink" src="img/product5.jpg" alt="Origin-Neipa Image">
-            <span class="Product_name">Fear Movie Lions</span>
-            <span class="Product_type">Double IPA</span>
-            <span class="Product_price">$15/4pack</span>
+            <span class="Product_name">Greg Koch - Stout</span>
+            <span class="Product_type">6.4% ABV</span>
+            <span class="Product_price">$22/4pack</span>
           </a>
         </div>
 
         <div class="product_block ">
           <a href="https://www.drinkcontainer.beer/beer" target="_blank">
             <img class="imagelink" src="img/product6.jpg" alt="Origin-Neipa Image">
+            <span class="Product_name">Xocovez - MStout</span>
+            <span class="Product_type">8.9% ABV</span>
+            <span class="Product_price">$25/4pack</span>
+          </a>
+        </div>
+      </div>
+
+      <h2>Seansonal Beers</h2>
+      <div class="product_box">
+        <div class="product_block ">
+          <a href="https://www.drinkcontainer.beer/beer" target="_blank">
+            <img class="imagelink" src="img/product4.jpg" alt="Origin-Neipa Image">
             <span class="Product_name">Fear Movie Lions</span>
             <span class="Product_type">Double IPA</span>
             <span class="Product_price">$15/4pack</span>
@@ -94,10 +162,19 @@
 
         <div class="product_block ">
           <a href="https://www.drinkcontainer.beer/beer" target="_blank">
-            <img class="imagelink" src="img/product7.jpg" alt="Origin-Neipa Image">
-            <span class="Product_name">Fear Movie Lions</span>
-            <span class="Product_type">Double IPA</span>
-            <span class="Product_price">$15/4pack</span>
+            <img class="imagelink" src="img/product5.jpg" alt="Origin-Neipa Image">
+            <span class="Product_name">Greg Koch - Stout</span>
+            <span class="Product_type">6.4% ABV</span>
+            <span class="Product_price">$22/4pack</span>
+          </a>
+        </div>
+
+        <div class="product_block ">
+          <a href="https://www.drinkcontainer.beer/beer" target="_blank">
+            <img class="imagelink" src="img/product6.jpg" alt="Origin-Neipa Image">
+            <span class="Product_name">Xocovez - MStout</span>
+            <span class="Product_type">8.9% ABV</span>
+            <span class="Product_price">$25/4pack</span>
           </a>
         </div>
       </div>
@@ -113,5 +190,10 @@
         <div>Vancouver, BC V6A 1K1</div>
         <div>CANADA</div>
       </div>
+
+      <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+      <script src="javascript/navigation.js"> </script>
+      <script src="javascript/slideshow.js"> </script>
+
   </body>
 </html>

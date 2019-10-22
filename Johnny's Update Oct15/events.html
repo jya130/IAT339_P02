@@ -12,33 +12,35 @@
     <title>Events</title>
   </head>
   <body>
-    <header>
     <div class="nav_container">
-      <nav class="header_container" id="myTopnav">
-        <img src="img/logo.png" alt="Logo">
-        <a href="styleguide-container-brewing.html"  class="button">About</a>
-        <a href="checkout-container-brewing.html"  class="button">Cart</a>
-        <a href="events.html"  class="button active">Events</a>
-        <a href="product-container-brewing.html" class="button" >Our Beers</a>
-        <a href="homepage.html#" class="button">Home</a>
-        <!-- <a href="#" class="icon"><i class="fa fa-bars"></i></a> -->
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+
+      <div class="hamburgur">
+        <a class="icon" onClick="openNav()">
           <i class="fa fa-bars"></i>
         </a>
+      </div>
+      <div class="header_img">
+        <img src="img/container-white.png" alt="Logo">
+      </div>
+      <div class="header_content">
+        <nav id="#header_content">
+          <a href="homepage.html">Home</a>
+          <a href="product-container-brewing.html">Our Beers</a>
+          <a href="events.html">Events</a>
+          <a href="checkout-container-brewing.html">Cart</a>
+          <a href="about.html">About</a>
       </nav>
-    </div>
-    </header>
+      </div>
 
-    <script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "header_container") {
-        x.className += " responsive";
-      } else {
-        x.className = "header_container";
-      }
-    }
-  </script>
+      <div id="mySidenav" class="sidenav">
+        <a class="closebtn" onclick="closeNav()">X</a>
+        <a href="homepage.html">Home</a>
+        <a href="product-container-brewing.html">Our Beers</a>
+        <a href="events.html">Events</a>
+        <a href="checkout-container-brewing.html">Cart</a>
+        <a href="styleguide-container-brewing.html">About</a>
+      </div>
+    </div>
 
   <div class = "intro_container">
     <img class = "background_photo" src="img/events_background.jpg" alt="beer photo" style="width:100%">
@@ -48,7 +50,7 @@
 
 <div class = "main_area">
   <div class = "posts_area">
-    
+
     <div class = "event_posts">
       <img class = "event_photo" src="img/event_poster.png" alt="poster photo">
       <div class = "heading_2">Blast from the Cask</div>
@@ -61,7 +63,7 @@
   </div>
 
   <div class = "posts_area post_area2">
-    
+
       <div class = "event_posts">
         <img class = "event_photo" src="img/beer_event.jpg" alt="poster photo">
         <div class = "heading_2">The BC Craft Brewers Conference</div>
@@ -71,10 +73,10 @@
 
       </div>
 
-  </div> 
+  </div>
 
   <div class = "posts_area post_area2">
-    
+
       <div class = "event_posts">
         <img class = "event_photo" src="img/beer_event2.jpg" alt="poster photo">
         <div class = "heading_2">Harvest Seasonals</div>
@@ -84,10 +86,10 @@
 
       </div>
 
-  </div> 
+  </div>
 
   <div class = "posts_area post_area2">
-    
+
       <div class = "event_posts">
         <img class = "event_photo" src="img/beer_event3.jpg" alt="poster photo">
         <div class = "heading_2">Sunshine Coast Tap Takeover</div>
@@ -97,10 +99,10 @@
 
       </div>
 
-  </div> 
+  </div>
 
   <div class = "posts_area post_area2">
-    
+
       <div class = "event_posts">
         <img class = "event_photo" src="img/beer_event4.jpg" alt="poster photo">
         <div class = "heading_2">BC Craft Beer Month</div>
@@ -110,10 +112,10 @@
 
       </div>
 
-  </div> 
+  </div>
 
   <div class = "posts_area post_area2">
-    
+
       <div class = "event_posts">
         <img class = "event_photo" src="img/beer_event5.jpg" alt="poster photo">
         <div class = "heading_2">Crohn’s Awareness Fundraiser & Tap Takeover</div>
@@ -123,7 +125,7 @@
 
       </div>
 
-  </div> 
+  </div>
 
 
 </div>
@@ -137,6 +139,9 @@
     <div>Vancouver, BC V6A 1K1</div>
     <div>CANADA</div>
   </div>
+
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="javascript/navigation.js"> </script>
 
   </body>
 </html>
