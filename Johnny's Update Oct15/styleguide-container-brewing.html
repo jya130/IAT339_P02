@@ -15,15 +15,35 @@
 <body>
 
 <!-- Responsive Navigation resources retrived from https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
-  <nav class="header_container">
-    <img src="img/logo.png" alt="Logo">
-    <a href="checkout-container-brewing.html" class="button" >Cart</a>
-    <a href="product-container-brewing.html" class="button" >Product</a>
-    <a href="#combined_elements" class="button">Combined Elements</a>
-    <a href="#text_elements" class="button">Text Elements</a>
-    <a href="#interactive_elements" class="button">Interactive Elements</a>
-    <a href="#" class="icon"><i class="fa fa-bars"></i></a>
+<div class="nav_container">
+  <div class="hamburgur">
+    <a class="icon" onClick="openNav()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <div class="header_img">
+    <img src="img/container-white.png" alt="Logo">
+  </div>
+  <div class="header_content">
+    <nav id="#header_content">
+      <a href="homepage.html">Home</a>
+      <a href="product-container-brewing.html">Our Beers</a>
+      <a href="events.html">Events</a>
+      <a href="checkout-container-brewing.html">Cart</a>
+      <a href="about.html">About</a>
   </nav>
+  </div>
+
+  <div id="mySidenav" class="sidenav">
+    <a class="closebtn" onclick="closeNav()">X</a>
+    <a href="homepage.html">Home</a>
+    <a href="product-container-brewing.html">Beers</a>
+    <a href="events.html">Events</a>
+    <a href="checkout-container-brewing.html">Cart</a>
+    <a href="styleguide-container-brewing.html">About</a>
+  </div>
+</div>
 
 
 
@@ -551,9 +571,22 @@
                           <li>Font Resources. Retrieved from <a href="https://fonts.google.com/">https://fonts.google.com/</a></li>
                           <li>Icon Resources. Retrieved from <a href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css</a></li>
                         </ul>
-
                       </section>
-
                   </div>
+
+                  <div class="footer">
+                    <div>
+                      <img src="img/container-white.png" alt="logo">
+                    </div>
+                    <div>Container Beer Brewery</div>
+                    <div>1216 Franklin St</div>
+                    <div>Vancouver, BC V6A 1K1</div>
+                    <div>CANADA</div>
+                  </div>
+
+                  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+                  <script src="javascript/navigation.js"> </script>
+                  <script src="javascript/slideshow.js"> </script>
+
                 </body>
               </html>

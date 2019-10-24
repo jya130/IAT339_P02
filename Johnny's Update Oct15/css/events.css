@@ -32,7 +32,7 @@ font-family: 'Raleway', sans-serif;
     margin-right:3em;
     display: flex;
     flex-wrap: wrap;
-    align-items: stretch;   
+    align-items: stretch;
     align-content: stretch;
     justify-content: space-around;
 
@@ -68,15 +68,17 @@ font-family: 'Raleway', sans-serif;
 }
 .post_information{
     padding-top:1em;
-    font-size:20px;
+    font-size:18px;
+    letter-spacing: 1.5px;
+    line-height: 1.25;
 }
 
 @media (max-width:509px) {
     .main_area{
         padding:1px;
-    
+
     }
-   
+
     .heading_2{
         font-size:20px;
         }
@@ -95,7 +97,7 @@ font-family: 'Raleway', sans-serif;
         margin-right:5em;
 
     }
-    
+
     .heading_2{
         font-size:18px;
     }
