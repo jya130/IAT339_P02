@@ -22,10 +22,10 @@
 .add_cart:hover {
   background-color: #8E793E;
 }
-.product_description{
+/* .product_description{
   width:40%;
   float:right;
-}
+} */
 
 /* edits from johnny on oct 22 */
 .body_container h2{
@@ -47,4 +47,195 @@
 .product_block{
   font-size: 16px;
   letter-spacing: 1px;
+}
+
+
+@media (max-width: 486px){
+  .product_block img{
+    width:200px;
+    height:auto;
+  }
+}
+/* edit product detail page */
+.body_container2{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+  display: flex;
+}
+.left-column {
+  width: 60%;
+  position: relative;
+}
+
+.left-column img{
+  width:100%;
+  filter: grayscale(0%);
+}
+ 
+.right-column {
+  width: 40%;
+  margin-top: 60px;
+}
+
+
+
+.product-description {
+  border-bottom: 1px solid #E1E8EE;
+  margin-bottom: 20px;
+  padding-bottom: 2em;
+}
+
+.product-description h1 {
+  font-weight: 300;
+  font-size: 52px;
+  color: #8E793E;
+  letter-spacing: -2px;
+}
+
+.product-description p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #86939E;
+  line-height: 24px;
+}
+
+
+.product-price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+ 
+.product-price span {
+  font-size: 26px;
+  font-weight: 300;
+  color: white;
+  margin-right: 20px;
+}
+
+.product-configuration{
+  margin-bottom:2em;
+}
+
+@media (max-width: 940px) {
+  .body_container2 {
+    flex-direction: column;
+    margin-top: 60px;
+  }
+ 
+  .left-column,
+  .right-column {
+    width: 100%;
+
+  }
+
+  /* .product-description{
+    text-align: center;
+  }  */
+  .left-column img {
+    width: 80%;
+    right: 0;
+    top: -65px;
+    left: initial;
+  }
+}
+ 
+@media (max-width: 402px){
+  .right-column h1{
+    font-size: 40px;
+  }
+
+  .right-column{
+    margin-top:1px;
+  }
+  .left-column img{
+    padding-top:1px;
+  }
+  .body_container2{
+    margin:1px;
+  }
+}
+@media (max-width: 375px){
+  .left-column img {
+    width: 360px;
+    right: 0;
+    top: -65px;
+    left: initial;
+
+  }
+
+}
+
+
+/* design input number, reference: https://designmodo.com/create-product-page/*/
+/* input[type="number"] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+} */
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.number-input {
+  border: 1px solid #ddd;
+  display: inline-flex;
+}
+
+.number-input,
+.number-input * {
+  box-sizing: border-box;
+}
+.number-input button {
+  outline:none;
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  margin: 0;
+  position: relative;
+}
+
+.number-input button:before,
+.number-input button:after {
+  display: inline-block;
+  position: absolute;
+  content: '';
+  width: 1rem;
+  height: 2px;
+  background-color: white;
+  transform: translate(-50%, -50%);
+}
+.number-input button.plus:after {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.number-input input[type=number] {
+  font-family: 'Muli', sans-serif;
+  max-width: 5rem;
+  padding: .5rem;
+  border: solid #ddd;
+  border-width: 0 2px;
+  font-size: 1.5rem;
+  height: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+button:hover{
+  border-color:rgb(183, 215, 247);
+  box-shadow:0 0 8px 0 #AD974F;
+
+}
+
+button:active {
+  border-color:rgb(183, 215, 247);
+  box-shadow:0 0 12px 0 #AD974F;
 }

@@ -1,86 +1,97 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Product Listing</title>
-    <link href="https://fonts.googleapis.com/css?family=Muli%7CRaleway%7CRoboto&display=swap" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/product.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"  rel="stylesheet" >
-  </head>
-  <body>
-    <div class="nav_container">
 
-      <div class="hamburgur">
-        <a class="icon" onClick="openNav()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
-      <div class="header_img">
-        <img src="img/container-white.png" alt="Logo">
-      </div>
-      <div class="header_content">
-        <nav id="#header_content">
-          <a href="homepage.html">Home</a>
-          <a href="product-container-brewing.html">Our Beers</a>
-          <a href="events.html">Events</a>
-          <a href="checkout-container-brewing.html">Cart</a>
-          <a href="about.html">About</a>
-      </nav>
-      </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Product Listing</title>
+  <link href="https://fonts.googleapis.com/css?family=Muli%7CRaleway%7CRoboto&display=swap" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/product.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
 
-      <div id="mySidenav" class="sidenav">
-        <a class="closebtn" onclick="closeNav()">X</a>
+<body>
+  <div class="nav_container">
+
+    <div class="hamburgur">
+      <a class="icon" onClick="openNav()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <div class="header_img">
+      <img src="img/container-white.png" alt="Logo">
+    </div>
+    <div class="header_content">
+      <nav id="#header_content">
         <a href="homepage.html">Home</a>
         <a href="product-container-brewing.html">Our Beers</a>
         <a href="events.html">Events</a>
         <a href="checkout-container-brewing.html">Cart</a>
-        <a href="styleguide-container-brewing.html">About</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+      <a class="closebtn" onclick="closeNav()">X</a>
+      <a href="homepage.html">Home</a>
+      <a href="product-container-brewing.html">Our Beers</a>
+      <a href="events.html">Events</a>
+      <a href="checkout-container-brewing.html">Cart</a>
+      <a href="styleguide-container-brewing.html">About</a>
+    </div>
+  </div>
+
+
+  <div class="body_container2">
+    <div class="left-column">
+      <a href="product_detail.html" target="_blank">
+        <img class="imagelink" src="img/detail_product.png" alt="Origin-Neipa Image">
+      </a>
+    </div>
+
+    <div class="right-column">
+      <div class="product-description">
+
+        <h1 class="Product_name">AGGRO-DIPA</h1>
+        <p class="product_text">Getting all aggro can sometimes be a negative. Getting aggro with your hops
+          however? Awesome. </p>
+          <div class="Product_type">Double IPA</div>
+
+        <span class="product_text">ALC/VOL: 7%</span>
       </div>
-    </div>
+
+      <div class="product-configuration">
+
+        <div class="number-input">
+            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" ></button>
+            <input class="quantity" min="0" name="quantity" value="1" type="number">
+            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+          </div>
+      </div>
 
 
-    <div class="body_container">
-    <h1>Feature Beers</h1>
-    <div class="product_box">
-    <div class="product_block">
-        <a href="product_detail.html" target="_blank">
-        <img class="imagelink" src="img/product2.jpg" alt="Origin-Neipa Image">
-        <span class="Product_name">Fear Movie Lions</span>
-        <span class="Product_type">Double IPA</span>
-        <span class="Product_price">$15/4pack</span>
-        <span class = "Product_description">Getting all aggro can sometimes be a negative. Getting aggro with your hops however? Awesome. </span>
-        <span class = "Product_description">ALC/VOL:7%</span>
-        </a>
-    </div>
-
-    <div class = "body_container">
-            <label for="number_beer">Number:</label>
-            <input type="number" id="number_beer" name="beer"
-                   min="1" max="100">
-
-    </div>
-
-    <div class = "body_container">
-       <a href = "checkout-container-brewing.html" class = "add_cart">
-                Add to cart  </a>
-    </div>
-</div>
-    </div>
-
-      <div class="footer">
-        <div>
-          <img src="img/container-white.png" alt="logo">
+      <div class = "product-price">
+          <span class="Product_price">$15/4pack</span>
+      <a href="checkout-container-brewing.html" class="add_cart">
+        Add to cart </a>
         </div>
-        <div>Container Beer Brewery</div>
-        <div>1216 Franklin St</div>
-        <div>Vancouver, BC V6A 1K1</div>
-        <div>CANADA</div>
-      </div>
+    </div>
+  </div>
 
-      <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-      <script src="javascript/navigation.js"> </script>
+  <div class="footer">
+    <div>
+      <img src="img/container-white.png" alt="logo">
+    </div>
+    <div>Container Beer Brewery</div>
+    <div>1216 Franklin St</div>
+    <div>Vancouver, BC V6A 1K1</div>
+    <div>CANADA</div>
+  </div>
 
-  </body>
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="javascript/navigation.js"> </script>
+
+</body>
+
 </html>

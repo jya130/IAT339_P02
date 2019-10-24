@@ -1,6 +1,6 @@
-.nav_container{
+/* .nav_container{
     margin-bottom: 8rem;
-  }
+  } */
 .intro_container{
     max-width: 1480px;
     width: 100%;
@@ -27,23 +27,17 @@ font-family: 'Raleway', sans-serif;
 }
 /* adjusting entire post area */
 .main_area{
-    padding-top:10rem;
+    padding-top:4em;
+    margin-left:3em;
+    margin-right:3em;
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: stretch;   
+    align-content: stretch;
     justify-content: space-around;
 
 }
-@media (max-width:509px) {
-    .posts_area{
-      padding: 1rem;
-    }
 
-    .post_infomation{
-        font-size:13px;
-    }
-
-}
 
 
 
@@ -51,12 +45,12 @@ font-family: 'Raleway', sans-serif;
 
 .event_photo{
     max-width:100%;
-
+    width:540px;
+    height:auto;
 }
 .event_posts{
     width: 100%;
     max-width:400px;
-    min-width: 200px;
     flex: 0 0 200px;
     margin: 1em;
     /* border: 1px solid #ccc; */
@@ -75,6 +69,39 @@ font-family: 'Raleway', sans-serif;
 .post_information{
     padding-top:1em;
     font-size:20px;
+}
+
+@media (max-width:509px) {
+    .main_area{
+        padding:1px;
+    
+    }
+   
+    .heading_2{
+        font-size:20px;
+        }
+
+    .post_information{
+        font-size:13px;
+
+    }
+
+}
+
+@media screen and (max-width:375px) {
+    .main_area{
+        padding:1px;
+        margin-left:3em;
+        margin-right:5em;
+
+    }
+    
+    .heading_2{
+        font-size:18px;
+    }
+    .post_information{
+        font-size:14px;
+    }
 }
 /*
 button{
