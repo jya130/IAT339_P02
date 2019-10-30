@@ -23,7 +23,7 @@
   </div>
 
   <div class="header_img">
-    <img src="img/container-white.png" alt="Logo">
+    <a href = "homepage.html"><img src="img/container-white.png" alt="Logo"></a>
   </div>
   <div class="header_content">
     <nav id="#header_content">
@@ -102,7 +102,7 @@
           <h4>Sample Code: </h4>
           <code>
             &lt;label for="txt-input">Search&lt;/label>
-            &lt;input id="txt-input" type="text" placeholder="What's in mind?">
+            &lt;input class="txt-input" type="text" placeholder="What's in mind?">
           </code>
 
           <h4>Rendered elements: </h4>
@@ -116,15 +116,15 @@
           <h4>Sample Code: </h4>
           <code>
             &lt;label for="credit-btn">
-              &lt;input id="credit-btn" type="radio" name="payment" value="credit">
+              &lt;input class="credit-btn" type="radio" name="payment" value="credit">
               Credit
             &lt;/label>
             &lt;label for="debit-btn">
-              &lt;input id="debit-btn" type="radio" name="payment" value="debit">
+              &lt;input class="debit-btn" type="radio" name="payment" value="debit">
               Debit
             &lt;/label>
             &lt;label for="paypal-btn">
-              &lt;input id="paypal-btn" type="radio" name="payment" value="paypal">
+              &lt;input class="paypal-btn" type="radio" name="payment" value="paypal">
               Paypal
             &lt;/label>
           </code>
@@ -327,35 +327,35 @@
                   &lt;div class="card">
                     &lt;h3>Payment&lt;/h3>
                     &lt;label for="cname-input">Name on Card&lt;/label>
-                    &lt;input type="text" id="cname-input" name="cardname" placeholder="John Smith">
+                    &lt;input type="text" class="cname-input" name="cardname" placeholder="John Smith">
                   &lt;/div>
                   &lt;div class="card">
                     &lt;label for="cnumber-input">Credit card number&lt;/label>
-                    &lt;input type="text" id="cnumber-input" name="cardnumber" placeholder="123456789">
+                    &lt;input type="text" class="cnumber-input" name="cardnumber" placeholder="123456789">
                   &lt;/div>
                   &lt;div class="card">
                     &lt;label for="cexp-input">Expire Date&lt;/label>
-                    &lt;input type="text" id="cexp-input" name="expmonth" placeholder="06/19">  &lt;/div>
+                    &lt;input type="text" class="cexp-input" name="expmonth" placeholder="06/19">  &lt;/div>
                     &lt;div class="card">
                       &lt;label for="ccv-input">CVV&lt;/label>
-                      &lt;input type="text" id="ccv-input" name="cvv" placeholder="564">  &lt;/div>
+                      &lt;input type="text" class="ccv-input" name="cvv" placeholder="564">  &lt;/div>
                     &lt;/div>
                     &lt;div class="billing">
                       &lt;h3>Billing Address&lt;/h3>
                       &lt;div class="card">
                         &lt;label for="bname">Name&lt;/label>
-                        &lt;input type="text" id="bname" name="billname" placeholder="John Smith">
+                        &lt;input type="text" class="bname" name="billname" placeholder="John Smith">
                       &lt;/div>
                       &lt;div class="card">
                         &lt;label for="baddress">Address&lt;/label>
-                        &lt;input type="text" id="baddress" name="billaddress" placeholder="604 xxxxx ave. Surrey, B.C.">
+                        &lt;input type="text" class="baddress" name="billaddress" placeholder="604 xxxxx ave. Surrey, B.C.">
                       &lt;/div>
                       &lt;div class="card">
                         &lt;label for="bcountry">Country&lt;/label>
-                        &lt;input type="text" id="bcountry" name="billcountry" placeholder="Canada">  &lt;/div>
+                        &lt;input type="text" class="bcountry" name="billcountry" placeholder="Canada">  &lt;/div>
                         &lt;div class="card">
                           &lt;label for="bpos">Postal Code&lt;/label>
-                          &lt;input type="text" id="bpos" name="billpos" placeholder="V6Y 4H1">  &lt;/div>
+                          &lt;input type="text" class="bpos" name="billpos" placeholder="V6Y 4H1">  &lt;/div>
                         &lt;/div>
                         &lt;div class="button2 confirm_payment">
                           Confirm
@@ -576,12 +576,16 @@
 
                   <div class="footer">
                     <div>
-                      <img src="img/container-white.png" alt="logo">
+                      <a href = "homepage.html"><img src="img/container-white.png" alt="Logo"></a>
                     </div>
                     <div>Container Beer Brewery</div>
                     <div>1216 Franklin St</div>
                     <div>Vancouver, BC V6A 1K1</div>
                     <div>CANADA</div>
+                    <div><a href = "reference.html" class = "final_reference">Reference</a></div>
+                    <div><a href = "https://github.com/jya130/IAT339_P02" class = "final_git">Link to Project's Github</a></div>
+
+
                   </div>
 
                   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
