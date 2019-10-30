@@ -1,6 +1,4 @@
-/* .nav_container{
-    margin-bottom: 8rem;
-  } */
+
 .intro_container{
     max-width: 1480px;
     width: 100%;
@@ -105,24 +103,3 @@ font-family: 'Raleway', sans-serif;
         font-size:14px;
     }
 }
-/*
-button{
-    background-color:rgb(46, 46, 46);
-    color: white;
-    padding:10px 15px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    margin-top:1em;
-}
-button:hover {
-    background-color: #8E793E;
-}
-img{
-    -webkit-filter: grayscale(80);
-    filter: grayscale(80);
-}
-img:hover{
-    -webkit-filter: grayscale(0);
-    filter: grayscale(0);
-} */

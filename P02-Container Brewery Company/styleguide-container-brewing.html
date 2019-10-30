@@ -15,6 +15,7 @@
 <body>
 
   <!-- Responsive Navigation resources retrived from https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
+  <!-- https://codepen.io/jonnowitts/pen/YQLRYE -->
   <div class="nav_container">
     <div class="hamburgur">
       <a class="icon" onClick="openNav()">
@@ -23,7 +24,7 @@
     </div>
 
     <div class="header_img">
-      <a href="homepage.html"><img src="img/container-white.png" alt="Logo"></a>
+      <a href="homepage.html"><img src="img/container-white.png" alt="White Company Logo"></a>
     </div>
     <div class="header_content">
       <nav id="#header_content">
@@ -55,7 +56,7 @@
         <section class="element textlink">
           <h3>In-text link</h3>
           <h4>CSS:Selector</h4>
-          <h5>.textlink</h5>
+          <p>.textlink<p>
           <h4>Sample code: </h4>
           <code>&lt;a href="https://www.drinkcontainer.beer/" target="_blank"&gt;Container&lt;/a&gt;</code>
 
@@ -69,7 +70,7 @@
         <section class="element">
           <h3>Navigation Link</h3>
           <h4>CSS Selector:</h4>
-          <h5>.button</h5>
+          <p>.button<p>
           <h4>Sample Code: </h4>
           <code>
             &lt;a href="#" class="button">Home&lt;/a>
@@ -83,7 +84,7 @@
         <section class="element">
           <h3>Submit/Reset Buttons</h3>
           <h4>CSS Selector</h4>
-          <h5>.button2 .button3</h5>
+          <p>.button2 .button3<p>
           <h4>Sample Code: </h4>
           <code>
             &lt;a href="#" class="button2">Submit&lt;/a>
@@ -99,7 +100,7 @@
         <section class="element">
           <h3>Text Input Field with Label</h3>
           <h4>CSS Selector:</h4>
-          <h5>input[type=text]</h5>
+          <p>input[type=text]<p>
           <h4>Sample Code: </h4>
           <code>
             &lt;label for="txt-input">Search&lt;/label>
@@ -149,7 +150,7 @@
         <section class="element">
           <h3>Image as a Link</h3>
           <h4>CSS Selector</h4>
-          <h5>.imagelink_container .imagelink</h5>
+          <p>.imagelink_container .imagelink<p>
           <h4>Sample Code: </h4>
           <code>
             &lt;div class="imagelink_container">
@@ -160,6 +161,7 @@
           </code>
 
           <h4>Rendered element: </h4>
+          <!-- https://css-tricks.com/almanac/properties/f/filter/ -->
           <div class="imagelink_container">
             <a href="https://www.drinkcontainer.beer/" target="_blank">
               <img class="imagelink" src="img/product2.jpg" alt="Logo of Conatiner Brewing">
@@ -196,7 +198,7 @@
         <section class="element">
           <h3>Paragraphs</h3>
           <h4>CSS Selector</h4>
-          <h5>.Paragraph_element</h5>
+          <p>.Paragraph_element</p>
           <h4>Sample Code: </h4>
           <code>
             &lt;p&gt;We are working hard to open soon and hope that the wait is worth it.<br>
@@ -210,29 +212,6 @@
             will give you a sneak peak at what to expect in our lounge. </p>
         </section>
 
-        <section class="element">
-          <h3>Numbered Lists</h3>
-          <h4>CSS Selector</h4>
-          <h5>.list_elements</h5>
-          <h4>Sample Code: </h4>
-          <code>
-              &lt;ol&gt;<br>
-              &lt;li&gt;Brunch&lt;/li&gt;<br>
-              &lt;li&gt;Lunch&lt;/li&gt;<br>
-              &lt;li&gt;Happy Hour&lt;/li&gt;<br>
-              &lt;li&gt;Dinner&lt;/li&gt;<br>
-              &lt;/ol&gt;
-            </code>
-
-          <h4>Rendered elements: </h4>
-          <ol class="list_elements">
-            <li>Brunch</li>
-            <li>Lunch</li>
-            <li>Happy Hour</li>
-            <li>Dinner</li>
-          </ol>
-        </section>
-
       </section>
       <!-- // TEXT ELEMENTS SECTION -->
 
@@ -244,7 +223,7 @@
         <section class="element">
           <h3>Main Navigation</h3>
           <h4>CSS Selector</h4>
-          <h5>.navigation_elements</h5>
+          <p>.nav_container</p>
           <h4>Sample Code: </h4>
           <code>
               &lt;nav class="navigation_elements">
@@ -257,22 +236,21 @@
             </code>
 
           <h4>Rendered elements</h4>
-          <nav class="navigation_elements">
-            <a href="#interactive_elements" class="button">Home</a>
-            <a href="#text_elements" class="button">Beers</a>
-            <a href="#combined_elements" class="button">Cart</a>
-            <a href="#citations" class="button">About</a>
-            <a href="#" class="icon"><i class="fa fa-bars"></i></a>
-          </nav>
+          <div class="nav_container">
+              <nav>
+                <a href="homepage.html">Home</a>
+                <a href="product-container-brewing.html">Our Beers</a>
+                <a href="events.html">Events</a>
+                <a href="checkout-container-brewing.html">Cart</a>
+                <a href="about.html">About</a>
+              </nav>
+          </div>
         </section>
 
         <section class="element">
           <h3>Product/Service Listing</h3>
-          <div class="textlink">
-            <a href="product-container-brewing.html" target="_blank">Link to product listing page</a>
-          </div>
           <h4>CSS Selector</h4>
-          <h5>.product_box .product_block</h5>
+          <p>.product_box .product_block</p>
           <h4>Sample Code: </h4>
           <code>
               &lt;div class="product_block">
@@ -289,7 +267,7 @@
           <div class="product_box">
             <div class="product_block">
               <a href="https://www.drinkcontainer.beer/beer" target="_blank">
-                <img class="imagelink" src="img/product2.jpg" alt="Origin-Neipa Image">
+                <img class="imagelink" src="img/product2.jpg" alt="Fear Movie Image">
                 <span class="Product_name">Fear Movie Lions</span>
                 <span class="Product_type">Double IPA</span>
                 <span class="Product_price">$15/4pack</span>
@@ -298,7 +276,7 @@
 
             <div class="product_block ">
               <a href="https://www.drinkcontainer.beer/beer" target="_blank">
-                <img class="imagelink" src="img/product2.jpg" alt="Origin-Neipa Image">
+                <img class="imagelink" src="img/product2.jpg" alt="Fear Movie Image">
                 <span class="Product_name">Fear Movie Lions</span>
                 <span class="Product_type">Double IPA</span>
                 <span class="Product_price">$15/4pack</span>
@@ -307,7 +285,7 @@
 
             <div class="product_block ">
               <a href="https://www.drinkcontainer.beer/beer" target="_blank">
-                <img class="imagelink" src="img/product2.jpg" alt="Origin-Neipa Image">
+                <img class="imagelink" src="img/product2.jpg" alt="Fear Movie Image">
                 <span class="Product_name">Fear Movie Lions</span>
                 <span class="Product_type">Double IPA</span>
                 <span class="Product_price">$15/4pack</span>
@@ -320,7 +298,7 @@
           <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_checkout_form -->
           <h3>Payment Form</h3>
           <h4>CSS Selector</h4>
-          <h5>.payment-div .card_info .billing</h5>
+          <p>.payment-div .card_info .billing</p>
           <h4>Sample Code: </h4>
           <code>
               &lt;div class="payment-div">
@@ -412,11 +390,9 @@
         <section class="element">
           <!-- https://codepen.io/justinklemm/pen/zAdoJ?editors=1100 -->
           <h3>Checkout Cart</h3>
-          <div class="textlink">
-            <a href="checkout-container-brewing.html" target="_blank">Link to checkout page</a>
-          </div>
+
           <h4>CSS Selector</h4>
-          <h5>.checkout-cart</h5>
+          <p>.checkout-cart</p>
           <h4>Sample Code: </h4>
           <code>
                       &lt;div class="item_card">
@@ -440,7 +416,7 @@
             <div class="item_card">
               <div class="item_img">
                 <a href="#">
-                  <img class="imagelink" src="img/product2.jpg" alt="Checkout Product">
+                  <img class="imagelink" src="img/product2.jpg" alt="Fear Movie Image">
                 </a>
               </div>
 
@@ -459,7 +435,7 @@
             <div class="item_card">
               <div class="item_img">
                 <a href="#">
-                  <img class="imagelink" src="img/product2.jpg" alt="Checkout Product">
+                  <img class="imagelink" src="img/product2.jpg" alt="Fear Movie Image">
                 </a>
               </div>
 
@@ -547,7 +523,7 @@
               <figcaption>Decorative Color #AD974F</figcaption>
             </figure>
             <figure class="color_scheme">
-              <img src="img/FBFCD4.png" alt="Third Color">
+              <img src="img/FBFCD4.png" alt="Fourth Color">
               <figcaption>Decorative Color #FBFCD4</figcaption>
             </figure>
 
@@ -578,7 +554,7 @@
 
     <div class="footer">
       <div>
-        <a href="homepage.html"><img src="img/container-white.png" alt="Logo"></a>
+        <a href="homepage.html"><img src="img/container-white.png" alt="White Company Logo"></a>
       </div>
       <div>Container Beer Brewery</div>
       <div>1216 Franklin St</div>

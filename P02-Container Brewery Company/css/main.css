@@ -60,6 +60,7 @@ code {
   background-color: #36383F;
 }
 
+/* https://codepen.io/erikterwan/pen/grOZxx */
 .nav_container{
   padding-top: 1em;
   text-align: center;
@@ -199,7 +200,8 @@ code {
   font-size: 16px;
 }
 .button:hover {
-  background-color: #8E793E;
+  text-decoration: underline;
+  text-decoration-color: #FBFCD4;
 }
 
 .button2{
@@ -423,7 +425,7 @@ input[type=text]:focus, input[type=number]:focus{
 
 .payment-div .billing{
   flex: 50%;
-} 
+}
 
 .payment-div .confirm_payment{
   flex: 100%;

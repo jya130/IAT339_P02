@@ -1,21 +1,19 @@
 'use strict';
 
-console.log("JavaScript is running.");
-
 var header_content = document.querySelector("#header_content");
 const currentScroll = window.pageYOffset;
 
 
-
+// https://www.w3schools.com/howto/howto_js_sticky_header.asp
 $(window).scroll(function(){
     if ($(window).scrollTop() >= 130) {
         $('.header_content').addClass('fixed_header');
 
-        console.log("dddd");
+        console.log("header fixed to the top");
     }
     else {
         $('.header_content').removeClass('fixed_header');
-        console.log('dsfsdf');
+        console.log('header not not fixed to the top');
     }
 
     if($(window).scrollTop() >= 50){
@@ -28,12 +26,12 @@ $(window).scroll(function(){
 document.querySelector('.main_content').addEventListener('click', closeNav);
 document.querySelector('.header_img').addEventListener('click', closeNav);
 function openNav(){
-  console.log('ddd');
+  console.log('side navigation opened');
   document.getElementById("mySidenav").style.width = "200px";
 }
 
 function closeNav(){
-  console.log('ddd');
+  console.log('side navigation closed');
   document.getElementById("mySidenav").style.width = "0px";
 
 }
