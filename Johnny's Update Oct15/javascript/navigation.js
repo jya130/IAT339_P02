@@ -6,6 +6,7 @@ var header_content = document.querySelector("#header_content");
 const currentScroll = window.pageYOffset;
 
 
+
 $(window).scroll(function(){
     if ($(window).scrollTop() >= 130) {
         $('.header_content').addClass('fixed_header');
@@ -24,7 +25,8 @@ $(window).scroll(function(){
         $('.hamburgur').removeClass('fixed_ham');
     }
 });
-
+document.querySelector('.main_content').addEventListener('click', closeNav);
+document.querySelector('.header_img').addEventListener('click', closeNav);
 function openNav(){
   console.log('ddd');
   document.getElementById("mySidenav").style.width = "200px";
@@ -33,4 +35,5 @@ function openNav(){
 function closeNav(){
   console.log('ddd');
   document.getElementById("mySidenav").style.width = "0px";
+
 }

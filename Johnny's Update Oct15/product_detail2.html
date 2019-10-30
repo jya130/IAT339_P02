@@ -2,99 +2,103 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Product Listing</title>
-  <link href="https://fonts.googleapis.com/css?family=Muli%7CRaleway%7CRoboto&display=swap" rel="stylesheet">
-  <link href="css/main.css" rel="stylesheet">
-  <link href="css/product.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product Listing</title>
+    <link href="https://fonts.googleapis.com/css?family=Muli%7CRaleway%7CRoboto&display=swap" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/product.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body>
-  <div class="nav_container">
+    <div class="nav_container">
 
-    <div class="hamburgur">
-      <a class="icon" onClick="openNav()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
-    <div class="header_img">
-        <a href = "homepage.html"><img src="img/container-white.png" alt="Logo"></a>
-    </div>
-    <div class="header_content">
-      <nav id="#header_content">
-        <a href="homepage.html">Home</a>
-        <a href="product-container-brewing.html">Our Beers</a>
-        <a href="events.html">Events</a>
-        <a href="checkout-container-brewing.html">Cart</a>
-        <a href="about.html">About</a>
-      </nav>
-    </div>
+        <div class="hamburgur">
+            <a class="icon" onClick="openNav()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <div class="header_img">
+            <a href="homepage.html"><img src="img/container-white.png" alt="Logo"></a>
+        </div>
+        <div class="header_content">
+            <nav id="#header_content">
+                <a href="homepage.html">Home</a>
+                <a href="product-container-brewing.html">Our Beers</a>
+                <a href="events.html">Events</a>
+                <a href="checkout-container-brewing.html">Cart</a>
+                <a href="about.html">About</a>
+            </nav>
+        </div>
 
-    <div id="mySidenav" class="sidenav">
-      <a class="closebtn" onclick="closeNav()">X</a>
-      <a href="homepage.html">Home</a>
-      <a href="product-container-brewing.html">Beers</a>
-      <a href="events.html">Events</a>
-      <a href="checkout-container-brewing.html">Cart</a>
-      <a href="about.html">About</a>
-    </div>
-  </div>
-
-
-  <div class="body_container2">
-    <div class="left-column">
-      <a href="product_detail2.html" target="_blank">
-        <img class="imagelink" src="img/detail_product2.png" alt="beer product Image">
-      </a>
-    </div>
-
-    <div class="right-column">
-      <div class="product-description">
-
-        <h1 class="Product_name">STONE DELICIOUS</h1>
-        <span class="Product_price">$15 / 4pack</span>
-
-        <p class="product_text">While our beers are many and diverse, yet unified by overarching boldness, India pale ales are our undeniable bread and butter. The result is an intensely citrusy, beautifully bitter beer is worthy of the simple-yet-lordly title of Stone Delicious IPA. </p>
-          <div class="Product_type">IPA</div>
-
-        <span class="product_text">ALC/VOL: 7.7%</span>
-      </div>
-
-      <div class="product-configuration">
-
-        <div class="number-input">
-            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" ></button>
-            <input class="quantity" min="0" name="quantity" value="1" type="number">
-            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
-          </div>
-      </div>
-
-
-      <div class = "product-price">
-      <a href="checkout-container-brewing.html" class="add_cart">
-        Add to cart </a>
+        <div id="mySidenav" class="sidenav">
+            <a class="closebtn" onclick="closeNav()">X</a>
+            <a href="homepage.html">Home</a>
+            <a href="product-container-brewing.html">Beers</a>
+            <a href="events.html">Events</a>
+            <a href="checkout-container-brewing.html">Cart</a>
+            <a href="about.html">About</a>
         </div>
     </div>
-  </div>
 
-  <div class="footer">
-    <div>
-        <a href = "homepage.html"><img src="img/container-white.png" alt="Logo"></a>
+    <div class="main_content">
+
+        <div class="body_container2">
+            <div class="left-column">
+                <a href="product_detail2.html" target="_blank">
+                    <img class="imagelink" src="img/detail_product2.png" alt="beer product Image">
+                </a>
+            </div>
+
+            <div class="right-column">
+                <div class="product-description">
+
+                    <h1 class="Product_name">STONE DELICIOUS</h1>
+                    <span class="Product_price">$15 / 4pack</span>
+
+                    <p class="product_text">While our beers are many and diverse, yet unified by overarching boldness,
+                        India pale ales are our undeniable bread and butter. The result is an intensely citrusy,
+                        beautifully bitter beer is worthy of the simple-yet-lordly title of Stone Delicious IPA. </p>
+                    <div class="Product_type">IPA</div>
+
+                    <span class="product_text">ALC/VOL: 7.7%</span>
+                </div>
+
+                <div class="product-configuration">
+
+                    <div class="number-input">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
+                        <input class="quantity" min="0" name="quantity" value="1" type="number">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                    </div>
+                </div>
+
+
+                <div class="product-price">
+                    <a href="checkout-container-brewing.html" class="add_cart">
+                        Add to cart </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div>
+                <a href="homepage.html"><img src="img/container-white.png" alt="Logo"></a>
+            </div>
+            <div>Container Beer Brewery</div>
+            <div>1216 Franklin St</div>
+            <div>Vancouver, BC V6A 1K1</div>
+            <div>CANADA</div>
+            <div><a href="reference.html" class="final_reference">Reference</a></div>
+            <div><a href="https://github.com/jya130/IAT339_P02" class="final_git">Link to Project's Github</a></div>
+            <div><a href="styleguide-container-brewing.html" class="final_reference">Style Guide</a></div>
+
+
+        </div>
     </div>
-    <div>Container Beer Brewery</div>
-    <div>1216 Franklin St</div>
-    <div>Vancouver, BC V6A 1K1</div>
-    <div>CANADA</div>
-    <div><a href = "reference.html" class = "final_reference">Reference</a></div>
-    <div><a href = "https://github.com/jya130/IAT339_P02" class = "final_git">Link to Project's Github</a></div>
-
-
-  </div>
-
-  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script src="javascript/navigation.js"> </script>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="javascript/navigation.js"> </script>
 
 </body>
 
