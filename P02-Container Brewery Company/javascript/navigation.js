@@ -28,10 +28,13 @@ document.querySelector('.header_img').addEventListener('click', closeNav);
 function openNav(){
   console.log('side navigation opened');
   document.getElementById("mySidenav").style.width = "200px";
+  $('.icon').addClass('hidden');
 }
 
 function closeNav(){
   console.log('side navigation closed');
   document.getElementById("mySidenav").style.width = "0px";
+  $('.icon').removeClass('hidden');
+
 
 }
